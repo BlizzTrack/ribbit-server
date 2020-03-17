@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="064b29ad-f48e-4bdb-9a1d-c5fd08105190" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="D:\Applications\Scoop\apps\go\current" />
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1ZGxj32ycnln4yLT6hrbHZX0i1D" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/storage/mongo" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects\blizztrack\oss\ribbit-server\storage\mongo" />
+      <recent name="D:\projects\blizztrack\oss\ribbit-server\storage\mongo\schemes" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\blizztrack\oss\ribbit-server\storage\mongo" />
+      <recent name="D:\projects\blizztrack\oss\ribbit-server" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build github.com/blizztrack/ribbit-server" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="ribbit-server" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/" />
+      <package value="github.com/blizztrack/ribbit-server" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="183" key="#Go_Modules_(vgo)" timestamp="1584479484251">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="183" key="#Go_Modules_(vgo)/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584479484251" />
+    <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584480362029">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584480362029" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1584480437374">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584480437374" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1584480437374">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584480437374" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1584480437373">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584480437373" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1584480437374">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584480437374" />
+  </component>
+</project>
