@@ -1,0 +1,21 @@
+name: Docker Image CI
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Publish to Registry
+      uses: jerray/publish-docker-action@master
+      with:
+        username: toyz
+        password: ${{ secrets.GITHUB_TOKEN }}
+        registry: docker.pkg.github.com
+        repository: toyz/ribbit-server/server
+        tags: latest,newest,master
