@@ -17,5 +17,12 @@ jobs:
         username: toyz
         password: ${{ secrets.GITHUB_TOKEN }}
         registry: docker.pkg.github.com
-        repository: toyz/ribbit-server/server
+        repository: blizztrack/ribbit-server
+        tags: latest,newest,master
+    - name: Publish to Docker
+      uses: jerray/publish-docker-action@master
+      with:
+        username: toyz
+        password: ${{ secrets.DOCKER_HUB }}
+        repository: toyz/ribbit-server
         tags: latest,newest,master
