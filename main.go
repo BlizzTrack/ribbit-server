@@ -7,6 +7,7 @@ package main
 import (
 	"github.com/blizztrack/ribbit-server/managers"
 	"github.com/blizztrack/ribbit-server/network"
+	"github.com/blizztrack/ribbit-server/stats"
 	"github.com/blizztrack/ribbit-server/storage/mongo"
 	"github.com/blizztrack/ribbit-server/workers"
 	log "github.com/sirupsen/logrus"
@@ -63,14 +64,24 @@ func main() {
 }
 
 func onData(command network.Command) (bool, []byte, string, error) {
+	if command.Method == "stats" {
+		s := stats.Get()
+		return false, []byte(s.String()), "stats", nil
+	}
+
 	if command.Method == "summary" {
+		stats.HitCommand(command.String())
 		return false, []byte(summaryManager.Raw()), summaryManager.Seqn(), nil
 	}
 
 	remote, raw, seqn, err := versionsManager.Get(command.Product, command.File)
 	if err != nil {
+		stats.Miss()
+		stats.MissCommand(command.String())
 		return remote, nil, "", err
 	}
 
+	stats.Hit()
+	stats.HitCommand(command.String())
 	return remote, []byte(raw), seqn, nil
 }

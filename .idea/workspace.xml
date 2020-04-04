@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="064b29ad-f48e-4bdb-9a1d-c5fd08105190" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/dockerimage.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,15 +39,17 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\projects\blizztrack\oss\ribbit-server\storage\mongo" />
-      <recent name="D:\projects\blizztrack\oss\ribbit-server\storage\mongo\schemes" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\projects\blizztrack\oss\ribbit-server" />
       <recent name="D:\projects\blizztrack\oss\ribbit-server\storage\mongo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects\blizztrack\oss\ribbit-server\stats" />
+      <recent name="D:\projects\blizztrack\oss\ribbit-server\storage\mongo" />
+      <recent name="D:\projects\blizztrack\oss\ribbit-server\storage\mongo\schemes" />
     </key>
   </component>
   <component name="RunManager">
@@ -78,21 +79,49 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584480362029" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1584480622302">
+    <state width="1877" height="335" key="GridCell.Tab.0.bottom" timestamp="1586020753604">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584480622302" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1584480622301">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584488064001" />
+    <state width="1877" height="335" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1586020753604" />
+    <state width="1877" height="335" key="GridCell.Tab.0.center" timestamp="1586020753604">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584480622301" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1584480622301">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584488064001" />
+    <state width="1877" height="335" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1586020753604" />
+    <state width="1877" height="335" key="GridCell.Tab.0.left" timestamp="1586020753604">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584480622301" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1584480622302">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584488064001" />
+    <state width="1877" height="335" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1586020753604" />
+    <state width="1877" height="335" key="GridCell.Tab.0.right" timestamp="1586020753604">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584480622302" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584488064001" />
+    <state width="1877" height="335" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1586020753604" />
+    <state width="1877" height="335" key="GridCell.Tab.1.bottom" timestamp="1586020753604">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="335" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1586020753604" />
+    <state width="1877" height="335" key="GridCell.Tab.1.center" timestamp="1586020753604">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="335" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1586020753604" />
+    <state width="1877" height="335" key="GridCell.Tab.1.left" timestamp="1586020753604">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="335" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1586020753604" />
+    <state width="1877" height="335" key="GridCell.Tab.1.right" timestamp="1586020753604">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="335" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1586020753604" />
+    <state x="461" y="167" key="SettingsEditor" timestamp="1586019749511">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="461" y="167" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1586019749511" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1586020379121">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1586020379121" />
   </component>
 </project>
